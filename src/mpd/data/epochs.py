@@ -71,16 +71,16 @@ def get_epochs(
 
     if l_freq is not None or h_freq is not None:
         logging.warning("Frequency filter: %s - %s Hz", l_freq, h_freq)
-        raw = raw.copy().filter(l_freq=l_freq, h_freq=h_freq)
+        raw = raw.filter(l_freq=l_freq, h_freq=h_freq)
     elif decim > 1:
         s_freq = raw.info["sfreq"]
         h_freq = s_freq / decim / 2
         logging.warning(
             "Frequency filter for antialiasing: %s from %s Hz", h_freq, s_freq
         )
-        raw = raw.copy().filter(l_freq=None, h_freq=h_freq)
+        raw = raw.filter(l_freq=None, h_freq=h_freq)
 
-    raw_phones = raw.copy().set_annotations(annotations[label])
+    raw_phones = raw.set_annotations(annotations[label])
     phone_events, phone_event_id = mne.events_from_annotations(raw_phones)
 
     if selected_phones is not None:
