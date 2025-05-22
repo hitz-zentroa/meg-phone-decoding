@@ -1,6 +1,7 @@
 # MPD - MEG Phone Decoding
 
 [![IberSPEECH 2024 - Paper](https://img.shields.io/badge/doi-10.21437%2fIberSPEECH.2024--16-b31b1b)](https://www.isca-archive.org/iberspeech_2024/dezuazo24_iberspeech.html)
+[![arXiv - Paper](https://img.shields.io/badge/cs.CL-2505.15355-b31b1b?&logo=arxiv&logoColor=red)](https://arxiv.org/abs/2505.15355)
 [![Build](https://github.com/hitz-zentroa/meg-phone-decoding/actions/workflows/python-app.yml/badge.svg)](https://github.com/hitz-zentroa/meg-phone-decoding/actions)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![HiTZ](https://img.shields.io/badge/HiTZ-Basque%20Center%20for%20Language%20Technology-blueviolet)](http://www.hitz.eus/)
@@ -8,7 +9,7 @@
 Code for the following papers:
 
 * [**Phone Pair Classification During Speech Production Using MEG Recordings (2024)**](https://www.isca-archive.org/iberspeech_2024/dezuazo24_iberspeech.html)
-* **Decoding Phone Pairs from MEG Signals Across Speech Modalities (2025)**
+* [**Decoding Phone Pairs from MEG Signals Across Speech Modalities (2025)**](https://arxiv.org/abs/2505.15355)
 
 It trains either linear models or compact neural networks to discriminate
 phones from low-frequency MEG activity.
@@ -159,6 +160,19 @@ If you find this helpful in your research, please cite:
 }
 ```
 
-Please, check the related paper in
+```bibtex
+@misc{dezuazo2025decodingphonepairsmeg,
+  title         = {Decoding Phone Pairs from MEG Signals Across Speech Modalities},
+  author        = {Xabier de Zuazo and Eva Navas and Ibon Saratxaga and Mathieu Bourguignon and Nicola Molinaro},
+  year          = {2025},
+  eprint        = {2505.15355},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2505.15355},
+}
+```
+
+Please, check the related papers in
 [10.21437/IberSPEECH.2024-16](https://www.isca-archive.org/iberspeech_2024/dezuazo24_iberspeech.html)
+and [arXiv:2505.15355](https://arxiv.org/abs/2505.15355)
 for more details.
